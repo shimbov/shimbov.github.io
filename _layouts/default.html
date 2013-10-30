@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>{{ page.title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Brand ientity, logos, print design, packaging, art direcion, iOS, android">
+<meta name="author" content="Mello Creations, mello.mk">
+<link rel="stylesheet" href="{{ site.url }}/css/bootstrap.css">
+<link rel="stylesheet" href="{{ site.url }}/css/mello.css">
+<link rel="shortcut icon" href="{{ site.url }}/img/fav.png">
+
+</head>
+<body>
+<div class="container" style="border-top:black solid 4px;">
+
+	<div class="row-fluid">
+		<a class="brand" href="{{ site.url }}/index.html"><div class="span3"><p class="andrea">ANDREA</p><p class="shimbov">SHIMBOV</p></div></a>
+		
+		{% if page.menusel == 'home' %} 
+		<div class="span2 offset1 aktiv">HOME</div></a>
+		{% else %}  
+		<a href="{{ site.url }}/index.html"><div class="span2 offset1 meni">HOME</div></a>
+		{% endif %}
+
+		{% if page.menusel == 'work' %} 
+		<div class="span2 aktiv">WORK</div></a>
+		{% else %}  
+		<a href="{{ site.url }}/work.html"><div class="span2 meni">WORK</div></a>
+		{% endif %}
+
+		{% if page.menusel == 'about' %} 
+		<div class="span2 aktiv">ABOUT</div></a>
+		{% else %}  
+		<a href="{{ site.url }}/about.html"><div class="span2 meni">ABOUT</div></a>
+		{% endif %}
+
+		{% if page.menusel == 'contact' %} 
+		<div class="span2 aktiv">CONTACT</div></a>
+		{% else %}  
+		<a href="{{ site.url }}/contact.html"><div class="span2 meni">CONTACT</div></a>
+		{% endif %}
+
+	</div>
+	
+	<div class="row-fluid"  style="border-top:solid 1px black; margin-top:-9px;">
+		<div class="span12"></div>
+	</div>
+	<div class="row-fluid">
+		<div class="span3" style="font-size:25px; letter-spacing:2px; padding-top:0px; margin-top:-25px; margin-left:3px;">GRAPHIC DESIGNER</div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12"></div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12"></div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12"></div>
+	</div>
+	<div class="row-fluid">
+		<div class="span12"></div>
+	</div>
+	
+	{{ content }}
+
+	<div class="futer">
+		<div class="container">
+		<div class="row-fluid">
+			<div class="span3 offset5">&#169 2013/ANDREA SHIMBOV</div>
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
