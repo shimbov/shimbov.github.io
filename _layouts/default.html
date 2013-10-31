@@ -8,7 +8,39 @@
 <link rel="stylesheet" href="{{ site.url }}/css/bootstrap.css">
 <link rel="stylesheet" href="{{ site.url }}/css/mello.css">
 <link rel="shortcut icon" href="{{ site.url }}/img/fav.png">
+{% if page.menusel == 'work' %}
+<script src="{{ site.url }}/js/jquery.js"></script>
+<script src="{{ site.url }}/js/bootstrap.min.js"></script>		
+<script type="text/javascript" src="{{ site.url }}/js/jquery.lightbox.js"></script>
+<link rel="stylesheet" href="{{ site.url }}/css/lightbox.css" type="text/css" media="screen" />
 
+
+<script>
+	$(document).ready(function(){
+		$divs = $("#container").children();
+		//console.log($divs);
+		$divs = $divs.slice(1);
+		console.log($divs);
+		$divs.hide();
+		$divs.eq(0).show();
+
+		$links = $("#menu").children();
+
+		$(".skrieno").on("click", function() {
+			$index = $(this).index() - 1;
+	
+			console.log($index);
+	
+			$divs.hide();
+			$divs.eq($index).show();
+		});
+		
+		$(".lightbox-2").lightbox({
+	        fitToScreen: true
+        });
+	});
+</script>
+{% endif %}
 </head>
 <body>
 <div class="container" style="border-top:black solid 4px;">

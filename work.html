@@ -3,3 +3,55 @@ layout: default
 title: Andrea Shimbov
 menusel: work
 ---
+
+<div id="container" class="row-fluid">
+
+	<div id="menu" class="span3" style="border-right:solid black 1px;">
+		<div class="row-fluid">
+			<div class="span12"></div>
+		</div>
+		<div class="row-fluid skrieno">
+			<div class="span12 workMenu">LOGO</div>
+		</div>
+		<div class="row-fluid skrieno">
+			<div class="span12 workMenu">BRAND IDENTITY</div>
+		</div>
+		<div class="row-fluid skrieno">
+			<div class="span12 workMenu">iOS|ANDROID</div>
+		</div>
+		<div class="row-fluid skrieno">
+			<div class="span12 workMenu">OTHER</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12"></div>
+		</div>
+	</div> <!-- end-div-id-menu -->
+
+	<!-- SLIKITE -->
+
+	<!--LOGO-->		
+	<div id="logo" class="span9" style="padding-right:10px;">
+		{% for logo in site.data.logos %}
+		<a href="{{ site.url }}/img/logos/{{ logo.filename }}" class="lightbox-2" rel="logos">
+	        <img src="{{ site.url }}/img/logos/{{ logo.filename }}" width="225" height="160" alt="logo1">
+	    </a>		
+		{% endfor %}
+	</div> 
+
+
+	<!--BRAND-->
+	<div id="brand" class="span8" style="padding-right:10px;">
+
+	</div>	
+
+	<!--MOBILE-->
+	<div id="mobile" class="span8" style="padding-right:10px;">
+
+	</div>
+
+	<!--OTHER-->
+	<div id="other" class="span8" style="padding-right:10px;">
+
+	</div>
+
+</div> <!-- end-container -->
