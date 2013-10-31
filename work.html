@@ -2,6 +2,7 @@
 layout: default
 title: Andrea Shimbov
 menusel: work
+logos: 
 ---
 
 <div id="container" class="row-fluid">
@@ -29,11 +30,11 @@ menusel: work
 
 	<!-- SLIKITE -->
 
-	<!--LOGO-->		
+	<!--LOGO-->	
 	<div id="logo" class="span9" style="padding-right:10px;">
-		{% for logo in site.data.logos %}
-		<a href="{{ site.url }}/img/logos/{{ logo.filename }}" class="lightbox-2" rel="logos">
-	        <img src="{{ site.url }}/img/logos/{{ logo.filename }}" width="225" height="160" alt="logo1">
+		{% for i in (1..126) %}
+		<a href="{{ site.url }}/img/logos/{{ i }}.jpg" class="lightbox-2" rel="logos">
+	        <img src="{{ site.url }}/img/logos/thumbs/{{ i }}.jpg" width="225" height="160" alt="logo1">
 	    </a>		
 		{% endfor %}
 	</div> 
