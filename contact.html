@@ -16,22 +16,22 @@ menusel: contact
 			</div>
 			<div class="row-fluid" style="margin-left:-21px;">
 				<div class="span12">
-					<form class="form-horizontal" style="margin-top:10px;">
+					<form id="contactForm" class="form-horizontal" style="margin-top:10px;">
 						<div class="control-group">
 							<label class="control-label" for="inputName"></label>
 							<div class="controls">
-								<input type="text" id="inputName" placeholder="Name">
+								<input type="text" id="inputName" placeholder="Name" name="name" >
 							</div>
 						</div>
 						<div class="control-group">
 							<label class="control-label" for="inputEmail"></label>
 							<div class="controls">
-								<input type="text" id="inputEmail" placeholder="Email">
+								<input type="text" id="inputEmail" placeholder="Email" name="email" >
 							</div>
 						</div>
 						<div class="control-group">
 							<div class="controls">
-								<textarea rows="3"></textarea>
+								<textarea rows="3" name="message" ></textarea>
 								<button type="submit" class="btn btn-small" style="margin-top:20px;">SEND</button>
 							</div>
 						</div>

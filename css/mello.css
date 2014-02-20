@@ -77,17 +77,21 @@ p {
 .workMenu:active{
 	background-image:url('workmenu-active1.png');
 }
-.futer{
+
+.futer {
+
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+
 	height:30px;
 	width:100%;
-	position:absolute;
-	bottom:0px;
-	left:0px;
+
 	background-color:#fff;
 	color:#000;
-	font-size:14px;
+	font-size:15px;
 	padding-top:12px;
-	letter-spacing:1px;
+	letter-spacing:2px;
 	border-top:solid black 1px;
 	font-weight:bold;
 }
@@ -119,26 +123,14 @@ input {
 }
 
 #logo {
-	margin-top:-50px;
-	height:380px;
-	overflow:scroll;
-	overflow-x:hidden;	
 }
 #mobile {
-	height:300px;
-	overflow:scroll;
-	overflow-x:hidden;	
 }
 #brand {
-	height:300px;
-	overflow:scroll;
-	overflow-x:hidden;	
 }
 #other {
-	height:300px;
-	overflow:scroll;
-	overflow-x:hidden;	
 }
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -154,5 +146,16 @@ input {
 }
 
 
+.thumb-wrap {
+}
 
+.thumb{
+	margin: 2px;
+	border: 1px solid black;
+	padding: 5px;
+}
 
+.center {
+   margin: 0 auto !important;
+   float: none !important;
+}

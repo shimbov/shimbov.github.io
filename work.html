@@ -32,26 +32,34 @@ logos:
 
 	<!--LOGO-->	
 	<div id="logo" class="span9" style="padding-right:10px;">
-		{% for i in (1..126) %}
-		<a href="{{ site.url }}/img/logos/{{ i }}.jpg" class="lightbox-2" rel="logos">
-	        <img src="{{ site.url }}/img/logos/thumbs/{{ i }}.jpg" width="225" height="160" alt="logo1">
+	{% for i in (1..126) %}
+		<a href="./img/logos/{{ i }}.jpg" class="thumb-wrap lightbox-2" rel="logos">
+	        <img class="thumb" src="./img/logos/thumbs/{{ i }}.jpg" width="200" height="160" alt="logo1">
 	    </a>		
-		{% endfor %}
+	{% endfor %}		
 	</div> 
 
 
 	<!--BRAND-->
-	<div id="brand" class="span8" style="padding-right:10px;">
-
+	<div id="brand" class="span9" style="padding-right:10px;">
+	{% for i in (1..24) %}
+		<a href="./img/corp/{{ i }}.jpg" class="thumb-wrap lightbox-2" rel="corp">
+        	<img class="thumb" src="./img/corp/thumbs/{{ i }}.jpg" width="200" height="160" alt="logo1">
+    	</a>
+	{% endfor %}
 	</div>	
 
 	<!--MOBILE-->
-	<div id="mobile" class="span8" style="padding-right:10px;">
-
+	<div id="mobile" class="span9" style="padding-right:10px;">
+	{% for i in (1..10) %}
+		<a href="./img/ui/{{ i }}.jpg" class="thumb-wrap lightbox-2" rel="ui">
+	        <img class="thumb" src="./img/ui/thumbs/{{ i }}.jpg" width="200" height="160" alt="logo1">
+	    </a>		
+	{% endfor %}
 	</div>
 
 	<!--OTHER-->
-	<div id="other" class="span8" style="padding-right:10px;">
+	<div id="other" class="span9" style="padding-right:10px;">
 
 	</div>
 
